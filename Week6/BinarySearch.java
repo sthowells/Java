@@ -22,13 +22,20 @@ public class BinarySearch {
         while (left <= right) {
             if (array[middle] < target) {
                 left = middle + 1; // set new "left" if target not found
+                System.out.println("The left index is: " + left);
             } else if (array[middle] == target) {
                 return true;
             } else {
                 right = middle - 1; // set new "right" if target not found
+                System.out.println("The right index is: " + right);
             }
             middle = (left + right) / 2; // find new middle
+            System.out.println("The middle index is: " + middle);
         }
         return false;
     }
 }
+
+
+
+
