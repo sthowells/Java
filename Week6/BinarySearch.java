@@ -1,3 +1,25 @@
+/* QUESTION:
+ * Assume a binary search is performed on the following array of integers:
+ * 
+ * {1, 14, 15, 24, 55, 59, 73, 90, 94, 99}	// integers
+ *  0   1,  2,  3,  4,  5,  6,  7,  8,  9	// index
+ * 
+ * Trace through each iteration of the algorithm, writing the number that will 
+ * be the middle element and the left and right bounds (indexes), when searching for the number 73.
+ * 
+ * 
+ * 			left		middle	right
+ * iteration 1: 	1		59		99		
+ * 	index :		0		5		9
+ * 
+ * iteration 2: 	59		90		99		
+ * 	index :		5		7		9
+ * 
+ * iteration 3: 	59		73		99		
+ * 	index :		5		6		7
+ * 
+ */
+
 public class BinarySearch {
 	private static int [] list = new int [] {1, 14, 15, 24, 55, 59, 73, 90, 94, 99};	
 	
